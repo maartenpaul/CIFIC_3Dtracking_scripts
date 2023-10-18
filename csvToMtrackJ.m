@@ -1,4 +1,4 @@
-function csvToMtrackJ(rootDir,fileName,csvPath,cropFromEdge,startFrame,minlength,pixSizeX,pixSizeY)
+function csvToMtrackJ(rootDir,fileName,csvPath,cropFromEdge,startFrame,minlength,pixSizeX,pixSizeZ)
     trackData = CSVimport(csvPath,'Track_ID','x','y','z','Frame',1,1,1); %timeMultiplier,umXYmultiplier,umZmultiplier)
 
     txtfile = (fullfile(rootDir,[fileName '.mdf']));
