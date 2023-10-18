@@ -33,7 +33,7 @@ function csvToMtrackJ(rootDir,fileName,csvPath,cropFromEdge,startFrame,minlength
         %inMask = curTrack.inMask;
         
         for j=1:length(x)
-            fprintf(fid,['Point ',num2str(j),' ',num2str((x(j)/pixSizeX)+cropFromEdge),' ',num2str((y(j)/pixSizeX)+cropFromEdge),' ',num2str(1),' ',num2str(frames(j)+1),' 1\n']);
+            fprintf(fid,['Point ',num2str(j),' ',num2str((x(j)/pixSizeX)+cropFromEdge),' ',num2str((y(j)/pixSizeX)+cropFromEdge),' ',num2str((z(j)/pixSizeZ)+2),' ',num2str(frames(j)+1),' 1\n']);
         end
     end
     
